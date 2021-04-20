@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import Container from "./Container";
 import Row from "./Row";
 import Col from "./Col";
-import Card from "./Card";
+import Card from "./Table";
 import SearchForm from "./SearchForm";
 import MovieDetail from "./MovieDetail";
+import Header from "./Header";
 import API from "../utils/API";
 
 class OmdbContainer extends Component {
@@ -42,6 +43,14 @@ class OmdbContainer extends Component {
     return (
       <Container>
         <Row>
+          <Header></Header>
+        </Row>
+        <Row>
+          <SearchForm>
+
+          </SearchForm>
+        </Row>
+        <Row>
           <Col size="md-8">
             <Card
               heading={this.state.result.Title || "Search for a Movie to Begin"}
@@ -57,15 +66,6 @@ class OmdbContainer extends Component {
               ) : (
                 <h3>No Results to Display</h3>
               )}
-            </Card>
-          </Col>
-          <Col size="md-4">
-            <Card heading="Search">
-              <SearchForm
-                value={this.state.search}
-                handleInputChange={this.handleInputChange}
-                handleFormSubmit={this.handleFormSubmit}
-              />
             </Card>
           </Col>
         </Row>
