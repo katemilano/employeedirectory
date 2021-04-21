@@ -1,8 +1,8 @@
 import React from "react";
-import OmdbContainer from "./components/OmdbContainer";
+import TableArea from "./components/TableArea";
 
 function App() {
-  return <OmdbContainer />;
+  return <TableArea />;
 }
 
 export default App;
