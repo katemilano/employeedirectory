@@ -1,6 +1,7 @@
-# employeedirectory
+# Employee Directory
 
 ## Description
+This application allows you to populate a random user API into a table and sort and filter through the table in order to see and find employees.  
 
 ## Table of Content
 
@@ -27,7 +28,7 @@ Running the application
 
 ## Technology
 
-Technologies used: MongoDB, Mongoose, Express.js, JavaScript, HTML, CSS, and Heroku.
+Technologies used: React, JavaScript, HTML, CSS, and Heroku.
 
 ## Installation
 To install necessary dependencies, run the following command:
